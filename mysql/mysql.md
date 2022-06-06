@@ -1,3 +1,47 @@
-'''
-asdasd
-'''
+```mysql
+SHOW DATABASES ;
+USE mydata;
+
+CREATE TABLE mytable (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    modelnumber VARCHAR(15) NOT NULL,
+    series VARCHAR(30) NOT NULL,
+    PRIMARY KEY(id));
+
+SHOW TABLES;
+
+desc mytable;
+
+DROP TABLE mytable;
+SHOW TABLES ;
+
+
+CREATE TABLE myproduct (
+    MYKEY INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    PRODUCTID TEXT,
+    TITLE TEXT,
+    PRO_PRICE INT,
+    DISCOUNT_PRICE INT,
+    DELIVERY TEXT,
+    PRIMARY KEY(MYKEY)
+);
+
+desc myproduct;
+DROP TABLE IF EXISTS myproduct;
+SHOW TABLES ;
+
+CREATE TABLE customer_db(
+    no INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name CHAR(20),
+    age TINYINT,
+    phone VARCHAR(20),
+    email VARCHAR(20) NOT NULL,
+    address VARCHAR(50),
+    PRIMARY KEY (no)
+);
+SHOW TABLES ;
+desc customer_db;
+
+SHOW DATABASES ;
+```
